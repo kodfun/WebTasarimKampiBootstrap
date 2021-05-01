@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Genişliği Eşit Sütunlar</h3>
+        <div class="row">
+            <div class="col bg-success">Sütun 1</div>
+            <div class="col bg-danger">Sütun 2</div>
+            <div class="col bg-info">Sütun 3</div>
+            <div class="col bg-warning">Sütun 4</div>
+        </div>
+        <h3>3-6-3</h3>
+        <div class="row">
+            <div class="col-3 bg-success">Sütun 1</div>
+            <div class="col-6 bg-danger">Sütun 2</div>
+            <div class="col-3 bg-info">Sütun 3</div>
+        </div>
+        <h3>3-6-3 (responsive)</h3>
+        <div class="row">
+            <div class="col-sm-3 bg-success">Sütun 1</div>
+            <div class="col-sm-6 bg-danger">Sütun 2</div>
+            <div class="col-sm-3 bg-info">Sütun 3</div>
+        </div>
+        <h3>Büyük Cihazlarda 4 Sütun | Küçüklerde 2 Sütun | En Küçüklerde 1 Sütun</h3>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 bg-success">Sütun 1</div>
+            <div class="col-lg-3 col-sm-6 bg-danger">Sütun 2</div>
+            <div class="col-lg-3 col-sm-6 bg-info">Sütun 3</div>
+            <div class="col-lg-3 col-sm-6 bg-warning">Sütun 4</div>
+        </div>
+        <h3>3 Sütun | En Küçük Cihazlarda Sağdaki Sütunu Gizle</h3>
+        <div class="row">
+            <div class="col-3 col-sm-3 bg-success">Sütun 1</div>
+            <div class="col-9 col-sm-6 bg-danger">Sütun 2</div>
+            <div class="col-sm-3 bg-info d-none d-sm-block">Sütun 3</div>
+        </div>
+        <!-- 
+            d-none: display: none
+            d-sm-block: small ve üstünde display: block
+         -->
+    </div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
