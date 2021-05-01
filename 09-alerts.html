@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alerts</h1>
+
+        <div>
+            <div class="alert alert-primary">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-secondary">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-success">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-info">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-warning">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-danger">Lorem ipsum <a class="alert-link" href="https://google.com">dolor</a> sit amet.</div>
+            <div class="alert alert-dark">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-light">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-primary">
+                Lorem ipsum dolor sit amet.
+                <button class="close" data-dismiss="alert">&times;</button>
+            </div>
+        </div>
+
+        <div>
+            <button id="btnKapat" class="btn btn-danger">
+                Yukarıdaki Tüm Alert'leri Kapat
+            </button>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $("#btnKapat").click(function() {
+            $(".alert").alert("close"); // domdan kaldırır
+            // $(".alert").toggle(); // gizle/göster
+        });
+    </script>
+</body>
+</html>
