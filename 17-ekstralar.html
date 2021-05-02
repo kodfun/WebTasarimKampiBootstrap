@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" />
+    <style>
+        body {
+            font-family: 'Zen Dots', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Google Fonts, Font Awesome, Toastr</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam quis omnis debitis, ad, facilis adipisci quae dolorum explicabo culpa dignissimos sequi quos, similique earum ipsam rem! Minus, natus.</p>
+        <p>Perspiciatis eum sunt laudantium tempore! Id, exercitationem, autem cupiditate vero dignissimos rem aliquam excepturi eligendi laboriosam totam cumque harum ullam a perspiciatis velit ratione quasi. Perspiciatis ab dolore corrupti veniam?</p>
+        <p>At, hic tenetur nihil ipsa id facilis deleniti debitis optio aliquid facere doloribus reprehenderit recusandae necessitatibus. Voluptatum consequatur alias esse? Dolores, incidunt. Reprehenderit nesciunt esse quisquam provident illum nostrum praesentium.</p>
+        <p>Adipisci aliquam atque dolorem voluptatibus quibusdam. Dolorum, aliquam! Alias voluptas, vel nulla at quis omnis provident. Quasi, est a animi eos id facere. Magni in recusandae inventore, sapiente similique maxime.</p>
+        <p>Veritatis necessitatibus mollitia nemo eveniet vitae vero praesentium delectus ab tempore in ipsum iusto repellendus, molestias, velit architecto. Nulla tenetur sint nesciunt eum nemo sunt repellendus iste, nam qui ipsam.</p>
+        <button class="btn btn-info">
+            <i class="fas fa-virus"></i>
+            Covid-19 Hakkında Bilgi
+        </button>
+        <button class="btn btn-success" id="btnBegen">
+            <i class="fas fa-heart"></i>
+            Beğen
+        </button>
+    </div>
+
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+    <script>
+        $("#btnBegen").click(function() {
+            toastr.success("Beğeniniz için teşekkürler!");
+        });
+    </script>
+</body>
+</html>

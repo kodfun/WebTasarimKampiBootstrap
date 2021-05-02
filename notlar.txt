@@ -7,3 +7,7 @@ Ctrl+K Ctrl+C  :  Yoruma Al (Comment)
 Ctrl+K Ctrl+U  :  Yorumdan Çıkar (Uncomment)
 
 href, src gibi attribute'larda bir üst dizine göreceli yol vermek için ../ kullanılır
+
+https://fonts.google.com/
+https://fontawesome.com/
+https://github.com/CodeSeven/toastr
