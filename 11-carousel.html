@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Bootstrap'ta Carousel Kullanımı</h1>
+        <div id="resimler" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#resimler" data-slide-to="0" class="active"></li>
+                <li data-target="#resimler" data-slide-to="1"></li>
+                <li data-target="#resimler" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/203/800/300" alt="photo" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deniz Kenarı</h5>
+                        <p>Bisikletimi park ettim. Biraz yürüyeyim.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/204/800/300" alt="photo" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tren Rayları</h5>
+                        <p>Kara tren gecikir, belki hiç gelmez..</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/206/800/300" alt="photo" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bağ Evim</h5>
+                        <p>Buralar eskiden hep dutluktu..</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#resimler" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Önceki</span>
+            </a>
+            <a class="carousel-control-next" href="#resimler" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Sonraki</span>
+            </a>
+        </div>
+
+        <h2>Javascript İle Kontrol</h2>
+        <div>
+            <button class="btn btn-primary" id="geriGit">Önceki</button>
+            <button class="btn btn-primary" id="ileriGit">Sonraki</button>
+        </div>
+
+    </div><!-- .container bitiş -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $("#geriGit").click(function() {
+            $("#resimler").carousel('prev');
+        });
+        $("#ileriGit").click(function() {
+            $("#resimler").carousel('next');
+        });
+    </script>
+</body>
+
+</html>
