@@ -1,3 +1,9 @@
 bootstrap kullanırken class isimlerinin otomatik tamamlamasını aktif hale getirmek için
 HTML CSS Support (ecmel.vscode-html-css)
 eklentisini kurduk.
+
+Ctrl+Ö         :  Yoruma Al
+Ctrl+K Ctrl+C  :  Yoruma Al (Comment)
+Ctrl+K Ctrl+U  :  Yorumdan Çıkar (Uncomment)
+
+href, src gibi attribute'larda bir üst dizine göreceli yol vermek için ../ kullanılır
